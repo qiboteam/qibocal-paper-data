@@ -1,0 +1,14 @@
+id: chevron
+operation: chevron_signal
+parameters:
+  amplitude_max_factor: 1.1
+  amplitude_min_factor: 0.9
+  amplitude_step_factor: 0.005
+  duration_max: 60
+  duration_min: 1
+  duration_step: 1
+  relaxation_time: 50000
+targets:
+- - D2
+  - D1
+update: true

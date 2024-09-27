@@ -1,0 +1,33 @@
+{
+    "title": "monitor_after_D3",
+    "backend": "qibolab",
+    "platform": "qw11q",
+    "start_time": "2024-07-28 12:04:12.700709+00:00",
+    "end_time": "2024-07-28 12:05:32.744361+00:00",
+    "stats": {
+        "t1-0": {
+            "acquisition": 33.89297130052,
+            "fit": 0.003275880590081215
+        },
+        "ramsey-0": {
+            "acquisition": 33.558812159113586,
+            "fit": 0.0065333060920238495
+        },
+        "readout_characterization-0": {
+            "acquisition": 12.578208622522652,
+            "fit": 0.002146802842617035
+        }
+    },
+    "author": "andrea.pasquale",
+    "tag": "compare_2",
+    "targets": null,
+    "versions": {
+        "qibo": "0.2.10",
+        "numpy": "1.26.4",
+        "qibolab": "0.1.9",
+        "qibocal": "0.0.11"
+    },
+    "date": "2024-07-28",
+    "start-time": "12:04:12",
+    "end-time": "12:05:32"
+}

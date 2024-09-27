@@ -1,0 +1,8 @@
+id: readout_characterization
+operation: readout_characterization
+parameters:
+  delay: 1000
+  nshots: 5000
+targets:
+- D3
+update: true

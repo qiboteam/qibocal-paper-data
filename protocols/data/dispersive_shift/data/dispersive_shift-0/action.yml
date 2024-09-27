@@ -1,0 +1,8 @@
+id: dispersive_shift
+operation: dispersive_shift
+parameters:
+  freq_step: 100000
+  freq_width: 10000000
+targets:
+- D1
+update: true

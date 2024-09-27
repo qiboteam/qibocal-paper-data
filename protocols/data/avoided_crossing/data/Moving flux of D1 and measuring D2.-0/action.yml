@@ -1,0 +1,16 @@
+id: Moving flux of D1 and measuring D2.
+operation: qubit_crosstalk
+parameters:
+  bias_step: 0.002
+  bias_width: 0.08
+  drive_amplitude: 0.001
+  drive_duration: 2000
+  flux_qubits:
+  - D1
+  freq_step: 200000
+  freq_width: 50000000
+  nshots: 1024
+  relaxation_time: 50000
+targets:
+- D2
+update: true

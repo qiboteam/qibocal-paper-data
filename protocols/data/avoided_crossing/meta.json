@@ -1,0 +1,25 @@
+{
+    "title": "test_coupling_fine",
+    "backend": "qibolab",
+    "platform": "qw11q",
+    "start_time": "2024-09-19 09:26:41.338011+00:00",
+    "end_time": "2024-09-19 09:35:56.269468+00:00",
+    "stats": {
+        "Moving flux of D1 and measuring D2.-0": {
+            "acquisition": 548.2177707310766,
+            "fit": 0.012434561736881733
+        }
+    },
+    "author": null,
+    "tag": null,
+    "targets": null,
+    "versions": {
+        "qibo": "0.2.7",
+        "numpy": "1.26.4",
+        "qibolab": "0.1.10",
+        "qibocal": "0.0.12"
+    },
+    "date": "2024-09-19",
+    "start-time": "09:26:41",
+    "end-time": "09:35:56"
+}

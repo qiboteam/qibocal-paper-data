@@ -1,0 +1,11 @@
+id: qubit flux dependence
+operation: qubit_flux
+parameters:
+  bias_step: 0.0005
+  bias_width: 0.2
+  freq_step: 1000000
+  freq_width: 50000000
+  relaxation_time: 20000
+targets:
+- D1
+update: true
