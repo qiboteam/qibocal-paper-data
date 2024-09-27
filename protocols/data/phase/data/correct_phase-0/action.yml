@@ -1,0 +1,12 @@
+id: correct_phase
+operation: correct_virtual_z_phases
+parameters:
+  dt: 0
+  native: CZ
+  theta_end: 7
+  theta_start: 0
+  theta_step: 0.2
+targets:
+- - D1
+  - D2
+update: true

@@ -1,0 +1,10 @@
+id: ramsey
+operation: ramsey
+parameters:
+  delay_between_pulses_end: 100000
+  delay_between_pulses_start: 10
+  delay_between_pulses_step: 500
+  nshots: 1024
+targets:
+- D3
+update: true

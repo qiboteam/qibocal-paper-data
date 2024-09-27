@@ -1,0 +1,30 @@
+{
+    "title": "test_phase",
+    "backend": "qibolab",
+    "platform": "qw11q",
+    "start_time": "2024-09-18 17:19:32.256716+00:00",
+    "end_time": "2024-09-18 17:22:06.982598+00:00",
+    "stats": {
+        "correct_phase_again-0": {
+            "acquisition": 154.70157768111676,
+            "fit": 0.012579548172652721
+        }
+    },
+    "author": null,
+    "tag": null,
+    "targets": [
+        [
+            "D2",
+            "D1"
+        ]
+    ],
+    "versions": {
+        "qibo": "0.2.7",
+        "numpy": "1.26.4",
+        "qibolab": "0.1.10",
+        "qibocal": "0.0.12"
+    },
+    "date": "2024-09-18",
+    "start-time": "17:19:32",
+    "end-time": "17:22:06"
+}

@@ -1,0 +1,30 @@
+{
+    "title": "test_chevron_paper",
+    "backend": "qibolab",
+    "platform": "qw11q",
+    "start_time": "2024-09-19 07:04:08.126079+00:00",
+    "end_time": "2024-09-19 07:08:25.408150+00:00",
+    "stats": {
+        "chevron-0": {
+            "acquisition": 257.2564522009343,
+            "fit": 0.013825809117406607
+        }
+    },
+    "author": null,
+    "tag": null,
+    "targets": [
+        [
+            "D2",
+            "D1"
+        ]
+    ],
+    "versions": {
+        "qibo": "0.2.7",
+        "numpy": "1.26.4",
+        "qibolab": "0.1.10",
+        "qibocal": "0.0.12"
+    },
+    "date": "2024-09-19",
+    "start-time": "07:04:08",
+    "end-time": "07:08:25"
+}

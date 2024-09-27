@@ -1,0 +1,27 @@
+{
+    "title": "test_dispersive_shift",
+    "backend": "qibolab",
+    "platform": "qw11q",
+    "start_time": "2024-09-05 11:38:47.460889+00:00",
+    "end_time": "2024-09-05 11:39:33.958807+00:00",
+    "stats": {
+        "dispersive_shift-0": {
+            "acquisition": 46.47541424911469,
+            "fit": 0.00595633196644485
+        }
+    },
+    "author": "andrea.pasquale",
+    "tag": "tutorial",
+    "targets": [
+        "D1"
+    ],
+    "versions": {
+        "qibo": "0.2.10",
+        "numpy": "1.26.4",
+        "qibolab": "0.1.10",
+        "qibocal": "0.0.11"
+    },
+    "date": "2024-09-05",
+    "start-time": "11:38:47",
+    "end-time": "11:39:33"
+}

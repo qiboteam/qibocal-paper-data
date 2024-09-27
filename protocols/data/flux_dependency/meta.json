@@ -1,0 +1,31 @@
+{
+    "title": "test_flux_again",
+    "backend": "qibolab",
+    "platform": "qw11q",
+    "start_time": "2024-09-19 12:15:01.562217+00:00",
+    "end_time": "2024-09-19 12:31:08.746010+00:00",
+    "stats": {
+        "resonator_spectroscopy-0": {
+            "acquisition": 12.233083776198328,
+            "fit": 0.003058019559830427
+        },
+        "qubit flux dependence-0": {
+            "acquisition": 954.8845687741414,
+            "fit": 0.026035896968096495
+        }
+    },
+    "author": null,
+    "tag": null,
+    "targets": [
+        "D1"
+    ],
+    "versions": {
+        "qibo": "0.2.7",
+        "numpy": "1.26.4",
+        "qibolab": "0.1.10",
+        "qibocal": "0.0.12"
+    },
+    "date": "2024-09-19",
+    "start-time": "12:15:01",
+    "end-time": "12:31:08"
+}

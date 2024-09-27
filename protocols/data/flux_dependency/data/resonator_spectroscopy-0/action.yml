@@ -1,0 +1,10 @@
+id: resonator_spectroscopy
+operation: resonator_spectroscopy
+parameters:
+  freq_step: 50000
+  freq_width: 5000000
+  nshots: 1024
+  power_level: low
+targets:
+- D1
+update: true
