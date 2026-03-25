@@ -1,0 +1,54 @@
+Bootstrap: docker
+From: python:{{ PYTHON_VERSION }}-slim
+
+%arguments
+    PYTHON_VERSION=3.12
+    QIBO_VERSION=0.3.1
+    QIBOLAB_VERSION=0.2.12
+    QIBOCAL_VERSION=0.2.4
+
+%post
+    # install the main package
+    pip install qibocal=={{ QIBOCAL_VERSION }}
+    # also install Qibolab explicitly, to ensure emulator dependency
+    # TODO: it will be eventually distributed with a separate qibolab-emulator package
+    pip install qibolab[emulator]=={{ QIBOLAB_VERSION }}
+
+    # retrieve sample platforms
+    apt-get update && apt-get install -y wget unzip
+    mkdir /opt/platforms
+
+    mkdir /opt/platforms/qibolab
+    wget https://github.com/qiboteam/qibolab/archive/refs/tags/v{{ QIBOLAB_VERSION }}.zip
+    unzip v{{ QIBOLAB_VERSION }}.zip
+    mv qibolab-{{ QIBOLAB_VERSION }}/tests/instruments/emulator/platforms /opt/platforms/qibolab
+    rm v{{ QIBOLAB_VERSION }}.zip
+    
+    mkdir /opt/platforms/qibocal
+    wget https://github.com/qiboteam/qibocal/archive/refs/tags/v{{ QIBOCAL_VERSION }}.zip
+    unzip v{{ QIBOCAL_VERSION }}.zip
+    mv qibocal-{{ QIBOCAL_VERSION }}/platforms /opt/platforms/qibocal
+    rm v{{ QIBOCAL_VERSION }}.zip
+
+    # overwrite Qibo dependency
+    # this is a temporary patch, since Qibocal declared dependencies are ruling
+    # out the required version of Qibo
+    pip install qibo=={{ QIBO_VERSION }}
+
+    # install dependencies relevant for package exploration
+    pip install jupyterlab
+
+%environment
+    export QIBOLAB_PLATFORMS=/opt/platforms/qibocal/platforms
+
+%runscript
+    jupyter lab
+
+%labels
+    Author Qibo team <qiboteam@qibo.science>
+
+%help
+    Container image accompanying arXiv:2410.00101, to simplify installation and
+    testing on simulated platforms.
+    For hardware control, an on-premise installation through pip (or other
+    Python packages manager) is recommended.
